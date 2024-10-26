@@ -21,7 +21,7 @@ class Company(models.Model):
 # Employee model
 class Employee(models.Model):
     name=models.CharField(max_length=100)
-    email=models.CharField(max_length=100)
+    email=models.CharField(max_length=100,db_index=True)
     address=models.CharField(max_length=200)
     phone=models.CharField(max_length=10)
     about=models.TextField()  
